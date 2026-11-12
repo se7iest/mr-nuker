@@ -4,14 +4,14 @@
 [![PyQt6](https://img.shields.io/badge/PyQt6-GUI-green?style=for-the-badge&logo=qt&logoColor=white)](https://pypi.org/project/PyQt6/)
 [![Discord](https://img.shields.io/badge/Discord-API-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/mrontop)
 
-Discord guild management terminal built with PyQt6. Features a fully custom-painted "Neon Glass" interface, multi-threaded execution, rate-limit handling, and a full suite of destructive and administrative actions.
+Discord guild destruction terminal built with PyQt6. Features a fully custom-painted "Neon Glass" interface, multi-threaded execution, rate-limit handling, and a full suite of destructive actions designed to wipe a server.
 
 ## Features
 
 - **Authentication**: Supports User and Bot tokens with automatic prefix detection and validation via `/users/@me`.
 - **Target Selection**: Fetch guilds via API or input a Guild ID manually.
-- **Action Matrix**: 21 distinct actions including Ban/Kick All, Delete/Create/Rename Channels and Roles, Webhook Spam, Audit Log Lag, Guild Rename, and Full Nuke.
-- **Rate Limiter**: Built-in bucket management tracking `X-RateLimit-*` headers. Handles HTTP 429 with automatic retries and global rate limit cooldowns.
+- **Destruction Matrix**: 21 distinct actions including Mass Ban/Kick, Delete/Create/Rename Channels and Roles, Webhook Spam, Audit Log Lag, Guild Rename, and Full Nuke.
+- **Rate Limiter**: Built-in bucket management tracking `X-RateLimit-*` headers. Handles HTTP 429 with automatic retries and global rate limit cooldowns to maximize destruction throughput.
 - **Proxy Support**: Optional proxy pool. Reads from `proxies_cache.txt` in the root directory. Falls back to direct connection if `DIRECT_FALLBACK` is enabled.
 - **Concurrency**: Utilizes `ThreadPoolExecutor` for parallel API requests (up to 64 workers for channel/role deletion).
 - **Custom UI**: Frameless window, custom drag/resize edges, `QPainter`-rendered aurora backdrop, glass frame, particle bursts, and real-time stat sparklines.
